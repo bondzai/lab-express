@@ -16,3 +16,7 @@ API docs
             solve : add nodemon.json
         }
     Authentication token for swagger docs
+    Handling many variables type in swagger
+        String get request 
+        Object get request
+        Array get request
