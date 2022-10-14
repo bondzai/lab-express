@@ -1,0 +1,9 @@
+heroku
+    git-sync
+        git add .
+        git commit -m "something changed"
+        git push heroku master
+        
+    setting
+        config variables
+            port = process.env.port || 4000

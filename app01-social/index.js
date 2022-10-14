@@ -1,10 +1,10 @@
 const express = require(`express`)
 const format = require(`date-format`)
 const app = express()
-const port = 4000 || process.env.port
+const PORT = process.env.PORT || 4000
 
 app.get(`/`, (req, res) => {
-    res.status(200).send(`Hello World`)
+    res.status(200).send(`Hello World!`)
 })
 
 app.get(`/api/v1/instagram`, (req, res) => {
@@ -39,6 +39,6 @@ app.get(`/api/v1/:token`, (req, res) => {
     res.status(200).json({ param: req.params.token})
 })
 
-app.listen(port, () => {
-    console.log(`server is running at port ${port}`)
+app.listen(PORT, () => {
+    console.log(`server is running at port ${PORT}`)
 })
