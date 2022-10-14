@@ -1,1 +1,22 @@
 openapi: 3.0.0
+info:
+  titke: Social App
+  description: My first social app
+  version: 1.0.1
+
+  servers:
+  - url: http://localhost:4000/api/v1
+    description: localhost version of out app
+  - url: http://localhost:4000/api/v1
+    description: this is just a dummy api url, it doesn't work
+
+components:
+  securitySchemes:
+
+    BasicAuth:
+      type: http
+      scheme: basic
+
+    BearerAuth:
+      type: http
+      scheme: bearer

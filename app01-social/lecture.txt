@@ -15,3 +15,4 @@ API docs
         issue : nodemon can not monitoring yaml file => {
             solve : add nodemon.json
         }
+    Authentication token for swagger docs
