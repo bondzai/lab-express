@@ -1,4 +1,5 @@
 const express = require(`express`)
+const format = require(`date-format`)
 const app = express()
 const port = 4000 || process.env.port
 
@@ -11,7 +12,7 @@ app.get(`/api/v1/instagram`, (req, res) => {
         username: "jamesbondIG",
         followers: 77,
         follows: 10,
-        date: Date.now()
+        date: format.asString(`dd-MM - hh:mm:ss`, new Date()),
     }
     res.status(200).json(instaSocial)
 })
@@ -20,7 +21,7 @@ app.get(`/api/v1/facebook`, (req, res) => {
         username: "jamesbondFB",
         followers: 77,
         follows: 10,
-        date: Date.now()
+        date: format.asString(`dd-MM - hh:mm:ss`, new Date()),
     }
     res.status(200).json(instaSocial)
 })
@@ -29,7 +30,7 @@ app.get(`/api/v1/linkedin`, (req, res) => {
         username: "jamesbondLinkedin",
         followers: 77,
         follows: 10,
-        date: Date.now()
+        date: format.asString(`dd-MM - hh:mm:ss`, new Date()),
     }
     res.status(200).json(instaSocial)
 })
