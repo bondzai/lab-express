@@ -1,0 +1,26 @@
+openapi: "3.0.0"
+info:
+  title: learn express & swagger
+  description: ---
+  version: 1.1.0
+  contact:
+    email: introbond.dev@gmail.com
+    url: "https://introbond-awards.web.app"
+
+# servers:
+#   - url: "https://localhost:4000/api/v1"
+#     description: for localhost - secure
+#   - url: "http://localhost:4000/api/v1"
+#     description: for localhost -regular
+servers:
+  - url: "{protocol}://localhost:4000/api/{version}"
+    description: for localhost - secure
+    variables:
+      version:
+        enum:
+          - v1
+          - v2
+      protocol:
+        enum:
+          - http
+          - https
