@@ -14,7 +14,7 @@ app.get('/', (req, res)=> {
     res.send('<h1> Hello from auth system - server </h1>')
 })
 
-app.get('/register', async (req, res)=> {
+app.post('/register', async (req, res)=> {
     try {
         const {firstname, lastname, email, password} = req.body
 
@@ -47,7 +47,9 @@ app.get('/register', async (req, res)=> {
         user.token = token
         //update or not in DB
 
-        //TODO: hadle password situation
+        //handle password situation
+        user.password = undefined
+
         res.status(201).json(user)
     } catch (error) {
         console.log(error)
