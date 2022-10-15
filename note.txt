@@ -22,3 +22,5 @@ API docs
         Array get request
 
     info : app.use(express.json()) = bodypraser middle ware embedded in express 
+
+    learn about query request
