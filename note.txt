@@ -57,4 +57,7 @@ section3:
         Modeling design
         
         ***express can not handle json file directly, it's must use middleware
-        learn : how to encryp the password
+        learn : how to encryp the password #262A2C
+
+        learn : middleware
+            Next() keyword
