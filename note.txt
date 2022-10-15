@@ -56,3 +56,5 @@ section3:
         Focus on medeling rather than syntax
         Modeling design
         
+        ***express can not handle json file directly, it's must use middleware
+        learn : how to encryp the password
