@@ -25,3 +25,4 @@ API docs
 
     learn : query request
     learn : upload image
+    learn : request headers token
