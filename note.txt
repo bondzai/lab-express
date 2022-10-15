@@ -23,4 +23,5 @@ API docs
 
     info : app.use(express.json()) = bodypraser middle ware embedded in express 
 
-    learn about query request
+    learn : query request
+    learn : upload image
