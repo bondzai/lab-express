@@ -1,4 +1,4 @@
-heroku
+section1: heroku
     git-sync
         git add .
         git commit -m "something changed"
@@ -7,8 +7,10 @@ heroku
     setting
         config variables
             port = process.env.port || 4000
+    
+    process.env
 
-API docs
+section2: API docs request & response
     swagger-ui-express
     YAML is a little bit cleaner than json
         npm i yamljs
@@ -26,3 +28,31 @@ API docs
     learn : query request
     learn : upload image
     learn : request headers token
+
+    request
+        input from url, body, query & images
+
+    response
+        string ,json, status code
+
+    issue : 
+        file got big -> multi dev environment
+        nothing is permanent
+        inject database
+        hide secrets
+
+section3:
+    hiding the secrets
+        dotenv
+            require('dotenv').config()
+            require('dotenv').config({ path: 'custom/.env'})
+    database
+        ORM: Object Relation Mapper
+        ODM: Object Data Mapper
+        mongoose
+        theory : food -> process -> cool -> digest -> goes
+        good data have to processing first before go in to database
+        structure === schema
+        Focus on medeling rather than syntax
+        Modeling design
+        
