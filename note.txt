@@ -20,3 +20,5 @@ API docs
         String get request 
         Object get request
         Array get request
+
+    info : app.use(express.json()) = bodypraser middle ware embedded in express 
