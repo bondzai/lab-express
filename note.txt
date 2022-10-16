@@ -59,8 +59,16 @@ section3:
         ***express can not handle json file directly, it's must use middleware
         learn : how to encryp the password #262A2C
 
-        learn : middleware
+        learn : middleware (to protect the route)
             Next() keyword
 
         learn : token
             token = header + payload + signature
+        
+        learn : login flow
+
+        cookie  - http only cookies for backend
+                - nomal cookies for everyone
+                - embedded token in cookies
+
+        learn : write the custom middleware
