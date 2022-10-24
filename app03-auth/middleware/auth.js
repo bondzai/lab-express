@@ -8,7 +8,6 @@ const auth = (req, res, next) => {
     req.body.token ||
     req.header('Authorization').replace('Bearer ', '')
 
-
     if (!token) {
         return res.status(403).send('token is missing')
     }
